@@ -17,5 +17,17 @@ Este é meu portfólio profissional onde apresento meus projetos, habilidades e 
 - Interface moderna e interativa
 
 ## 📬 Contato
-- LinkedIn: "https://www.linkedin.com/in/joelma-campos"
-- Email: "jfcampos5@hotmail.com"
+
+<li>
+
+ LinkedIn: 
+<a href="https://www.linkedin.com/in/joelma-campos" target="_blank" rel="noopener noreferrer">
+    Joelma Campos
+</a>
+</li>
+<li>
+  E-mail: 
+  <a href="mailto:jfcampos5@hotmail.com">
+    jfcampos5@hotmail.com
+  </a>
+</li>
