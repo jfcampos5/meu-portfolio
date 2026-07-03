@@ -4,8 +4,7 @@
 Este é meu portfólio profissional onde apresento meus projetos, habilidades e serviços como desenvolvedora web.
 
 ## 🌐 Acesse o projeto
-👉 https://co-2-calculator-ashy.vercel.app
-
+👉 https://meu-portfolio-wheat-eight.vercel.app/
 ## 🛠 Tecnologias utilizadas
 - HTML
 - CSS
