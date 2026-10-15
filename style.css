@@ -164,3 +164,89 @@ footer {
     padding: 60px 15px;
   }
 }
+
+/* ===================================================== */
+/* MELHORIAS ADICIONADAS (acessibilidade e organização)  */
+/* ===================================================== */
+
+/* Rolagem suave ao clicar nos links do menu */
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+/* Link "Pular para o conteúdo" (só aparece com a tecla Tab) */
+.skip {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  padding: 0.6rem 1rem;
+  background: #3b82f6;
+  color: #fff;
+  z-index: 100;
+  border-radius: 0 0 10px 0;
+}
+.skip:focus {
+  left: 0;
+  text-decoration: none;
+}
+
+/* Menu do cabeçalho: quebra de linha no celular */
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* CORREÇÃO: o brilho do card cobria os botões ao passar o mouse */
+.card::before {
+  pointer-events: none;
+}
+
+/* Etiquetas de tecnologia */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+}
+.tags li {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 3px 12px;
+  border-radius: 999px;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+/* Botões não sublinham no hover */
+.btn:hover {
+  text-decoration: none;
+}
+
+/* Foco visível para quem navega pelo teclado */
+a:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid #38bdf8;
+  outline-offset: 3px;
+}
+
+/* Rodapé com contraste melhor */
+footer {
+  color: #94a3b8;
+}
+
+/* Quem desativa animações no sistema vê o conteúdo direto */
+@media (prefers-reduced-motion: reduce) {
+  .fade-up {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .btn,
+  .card {
+    transition: none;
+  }
+}
